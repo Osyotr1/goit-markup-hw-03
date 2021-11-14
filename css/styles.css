@@ -40,7 +40,27 @@
     color: var(--studio-footer-color);
 }
 
+p,h1,h2,h3,ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: tomato;
+    
+}
+
+
+
 /*----------------------------- header------------------------------------ */
+
+.header {
+      
+}
 
 .header-logo {
     font-family: Raleway, sans-serif;
@@ -103,10 +123,23 @@
 }
 
 .hero {
-     background-color: var(--hero-bg-color);
+    background-color: var(--hero-bg-color);
+}
+
+.hero-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    height: 120px;
 }
 
 .main-btn {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -118,6 +151,8 @@
     letter-spacing: 0.06em;
     color: #ffffff;
     background-color: var(--button-bg-color);
+    border: 1px var(--button-bg-color);
+
 }
 
 .main-btn:hover,
@@ -178,6 +213,7 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+    text-align: center;
 }
 
 .team-title {
