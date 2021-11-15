@@ -296,7 +296,6 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--third-title-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -307,7 +306,22 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin-bottom: 30px;
+}
+
+.pad-team1 {
+    padding: 30px 59px;
+}
+
+.pad-team2 {
+    padding: 30px 60px;
+}
+
+.pad-team3 {
+    padding: 30px 65px;
+}
+
+.pad-team4 {
+    padding: 30px 67px;
 }
 
 .team-list {
@@ -403,7 +417,6 @@ img {
 }
 
 .pic-title {
-    margin-top: 20px;
     margin-bottom: 4px;
     font-weight: bold;
     font-size: 18px;
@@ -418,6 +431,10 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+}
+
+.pad-redactor {
+    padding: 20px 24px;
 }
 
 .pics {
