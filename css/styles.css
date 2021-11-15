@@ -50,16 +50,16 @@ p,h1,h2,h3,ul {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    background-color: tomato;
-    
+
 }
 
 
 
 /*----------------------------- header------------------------------------ */
 
-.header {
-      
+
+.head-links {
+    display: flex;
 }
 
 .header-logo {
@@ -70,6 +70,7 @@ p,h1,h2,h3,ul {
     letter-spacing: 0.03em;
     color: var(--header-logo-color);
 }
+
 
 .header-link {
     font-weight: 500;
@@ -124,20 +125,28 @@ p,h1,h2,h3,ul {
 
 .hero {
     background-color: var(--hero-bg-color);
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-box {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
     width: 696px;
     height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
 }
 
 .main-btn {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     min-width: 200px;
-    display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
     font-family: Roboto, sans-serif;
@@ -145,26 +154,29 @@ p,h1,h2,h3,ul {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
     background-color: var(--button-bg-color);
-    border: 1px var(--button-bg-color);
-
+    border: 4px var(--button-bg-color);
 }
 
 .main-btn:hover,
 .main-btn:focus,
 .main-btn:active {
     color: #ffffff;
-    background-color: var(--button-bg-color);
+    background-color:#188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    
 }
 
 /* -----------------------------------main page 1 ---------------------------------- */
+
+.specials {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
 .specials-title {
     font-weight: bold;
@@ -173,6 +185,7 @@ p,h1,h2,h3,ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--third-title-color);
+    margin-bottom: 10px;
 }
 
 .specials-text {
@@ -203,17 +216,26 @@ p,h1,h2,h3,ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+    margin-bottom: 50px;
+}
+
+.work-pictures {
+    margin-bottom: 94px;
 }
 
 /*------------------------------------ team page 1----------------------------------  */
 
 .members {
+    display: inline-block;
+    min-width: 284px;
+    margin-top: 94px;
+    margin-left: 453px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
-    text-align: center;
 }
 
 .team-title {
@@ -232,6 +254,10 @@ p,h1,h2,h3,ul {
     color: var(--main-text-color);
 }
 
+.team-pictures {
+    margin-bottom: 94px;
+}
+
 
 
 
@@ -243,6 +269,10 @@ p,h1,h2,h3,ul {
 
 
 /*------------------------------------- buttons page2 --------------------------------------- */
+
+.buttons {
+    margin-top: 94px;
+}
 
 .filter {
     position: absolute;
@@ -292,6 +322,20 @@ p,h1,h2,h3,ul {
     color: var(--main-text-color);
 }
 
+.pics {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio {
+    margin-bottom: 94px;
+}
 
 
 
@@ -308,6 +352,9 @@ p,h1,h2,h3,ul {
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-family: Raleway, sans-serif;   
     font-style: normal;
     font-weight: bold;
@@ -327,6 +374,14 @@ p,h1,h2,h3,ul {
     letter-spacing: 0.03em;
 
 }
+
+.adress-list {
+    display: block;
+}
+
+.adress-list:not(:last-child) {
+    margin-bottom: 9px;
+} 
 
 .address:hover, 
 .address:focus, 
