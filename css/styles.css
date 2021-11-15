@@ -46,20 +46,35 @@ p,h1,h2,h3,ul {
 }
 
 .container {
-    padding-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    max-width: 1200px;
 
 }
 
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 
 /*----------------------------- header------------------------------------ */
 
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+}
 
 .head-links {
     display: flex;
+    margin-left: 93px;
 }
 
 .header-logo {
@@ -71,6 +86,9 @@ p,h1,h2,h3,ul {
     color: var(--header-logo-color);
 }
 
+.header-list:not(:last-child) {
+    margin-right: 50px;
+}
 
 .header-link {
     font-weight: 500;
@@ -86,7 +104,14 @@ p,h1,h2,h3,ul {
     color: var(--pseudo-class-color);
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
 
+.header-contacts + .header-contacts {
+    margin-left: 50px;
+}
 
 .header-con {
     font-weight: 500;
@@ -173,9 +198,16 @@ p,h1,h2,h3,ul {
 
 /* -----------------------------------main page 1 ---------------------------------- */
 
-.specials {
-    margin-top: 94px;
-    margin-bottom: 94px;
+.spec-main {
+    display: flex;
+}
+
+.specials-list {
+    max-width: 270px;
+}
+
+.specials-list:not(:last-child) {
+    margin-right: 30px;
 }
 
 .specials-title {
@@ -196,6 +228,7 @@ p,h1,h2,h3,ul {
     color: var(--main-text-color);
 }
 
+
 .specs {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -207,6 +240,16 @@ p,h1,h2,h3,ul {
     overflow: hidden;
 }
 
+.pic-main {
+    display: flex;
+    justify-content: center;
+}
+
+.pic-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 /* -----------------------------------work page 1 ---------------------------------- */
 
 .work-title {
@@ -217,18 +260,15 @@ p,h1,h2,h3,ul {
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 50px;
+    margin-top: 94px;
 }
 
-.work-pictures {
-    margin-bottom: 94px;
-}
 
 /*------------------------------------ team page 1----------------------------------  */
 
 .members {
     display: inline-block;
     min-width: 284px;
-    margin-top: 94px;
     margin-left: 453px;
     margin-bottom: 50px;
     font-weight: bold;
@@ -241,21 +281,36 @@ p,h1,h2,h3,ul {
 .team-title {
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--third-title-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
     font-weight: normal;
     font-size: 16px;
+    text-align: center;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 30px;
 }
 
-.team-pictures {
-    margin-bottom: 94px;
+.team-list {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-main {
+    display: flex;
 }
 
 
@@ -270,9 +325,6 @@ p,h1,h2,h3,ul {
 
 /*------------------------------------- buttons page2 --------------------------------------- */
 
-.buttons {
-    margin-top: 94px;
-}
 
 .filter {
     position: absolute;
@@ -285,6 +337,15 @@ p,h1,h2,h3,ul {
     overflow: hidden;
 }  
 
+.button-line {
+    display: flex;
+    justify-content: center;
+}
+
+.button-list:not(:last-child) {
+    margin-right: 8px;
+}
+
 .button {
     font-weight: 500;
     font-size: 16px;
@@ -293,6 +354,8 @@ p,h1,h2,h3,ul {
     letter-spacing: 0.03em;
     color: var(--filter-btn-color);
     background-color: var(--filter-btn-bg);
+    border: transparent;
+    padding: 6px 22px;
 }
 
 .button:hover,
@@ -300,13 +363,29 @@ p,h1,h2,h3,ul {
 .button:active {
     color: var(--pseudo-class-txt-color);
     background-color: var(--pseudo-class-color);
+    border-radius: 4px;
 }
 
 
 /*------------------------------------ portfolio page2 -------------------------------------------*/
 
+.port-pic {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.pic-list {
+    margin-right: 30px;
+}
+
+.pic-list:nth-child(3n) {
+    margin-right: 0;
+}
 
 .pic-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-weight: bold;
     font-size: 18px;
     line-height: 2.0;
@@ -332,11 +411,6 @@ p,h1,h2,h3,ul {
     padding: 0;
     overflow: hidden;
 }
-
-.portfolio {
-    margin-bottom: 94px;
-}
-
 
 
 

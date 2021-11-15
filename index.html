@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="./portfolio.html" rel="noreferrer noopener">
     
 </head>
 <body class="body">
     <header class="header">
-        <div class="container">
+        <div class="container header-main">
             <P lang="en"><a class="link header-logo" href="">Web<span class="studio">Studio</span></a></P>
             <nav>
                 <ul class="list head-links">
@@ -25,7 +25,7 @@
                     <li class="header-list"><a class="link header-link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list">
+            <ul class="list contacts">
                  <li class="header-contacts"><a class="link header-con" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                  <li class="header-contacts"><a class="link header-con" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
@@ -40,10 +40,10 @@
             <button class="main-btn" type="button">Заказать услугу</button>
         </section>
 
-        <section class="specials"> 
+        <section class="section"> 
             <div class="container">
                 <h2 class="specs">Особенности</h2>
-                <ul class="list">
+                <ul class="list spec-main">
                     <li class="specials-list">
                         <h3 class="specials-title">Внимание к деталям</h3>
                         <p class="specials-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -62,26 +62,24 @@
                     </li>
                 </ul>
             </div>
-        </section>
 
-        <section class="work-examples">
             <div class="container">
             <h2 class="work-title" id="about">Чем мы занимаемся</h2>
                 <div class="work-pictures">
-                    <ul class="list">
-                        <li><img src="./images/about-img1.jpg" width="370" height="294" alt="Сотрудник пишет код"></li>
-                        <li><img src="./images/about-img2.jpg" width="370" height="294" alt="Смотрит в телефон"></li>
-                        <li><img src="./images/about-img3.jpg" width="370" height="294" alt="Делает дизайн на планшете"></li>
+                    <ul class="list pic-main">
+                        <li class="pic-item"><img src="./images/about-img1.jpg" width="370" height="294" alt="Сотрудник пишет код"></li>
+                        <li class="pic-item"><img src="./images/about-img2.jpg" width="370" height="294" alt="Смотрит в телефон"></li>
+                        <li class="pic-item"><img src="./images/about-img3.jpg" width="370" height="294" alt="Делает дизайн на планшете"></li>
                     </ul>
                  </div>
             </div>
         </section>
 
-        <section class="team">
+        <section class="section">
             <div class="container">
                 <h2 class="members">Наша команда</h2>
                 <div class="team-pictures">
-                    <ul class="list">
+                    <ul class="list team-main">
                         <li class="team-list">
                             <img src="./images/team1.jpg" width="270" height="260" alt="Дизайнер Игорь">
                             <h3 class="team-title">Игорь Демьяненко</h3>
