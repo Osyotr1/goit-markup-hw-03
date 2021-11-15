@@ -377,6 +377,9 @@ p,h1,h2,h3,ul {
 
 .pic-list {
     margin-right: 30px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .pic-list:nth-child(3n) {
